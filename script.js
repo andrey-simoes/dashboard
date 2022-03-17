@@ -18,3 +18,16 @@ toggle.onclick = function(){
     navigation.classList.toggle('active');
     main.classList.toggle('active');
 }
+
+// menu img user settings
+
+let userSetting = document.querySelector('.user');
+let userInfo = document.querySelector('.userConfig');
+
+function userDropdown(){
+    userInfo.classList.toggle('active');
+    console.log('teste');
+}
+
+
+userSetting.addEventListener('click', userDropdown);
