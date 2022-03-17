@@ -1,0 +1,79 @@
+.sheduleContainer{
+    padding: 2em 3em;
+}
+
+
+.page-title{
+    padding: 1em;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.shedulesBox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.shedulesBox .shedules{
+    position: relative;
+    background: $white;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 7px;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.shedulesBox .shedules .phone{
+    position: relative;
+    font-weight: 500;
+    font-size: 1em;
+    color: $black1;
+}
+
+.shedulesBox .shedules .test{
+    position: relative;
+    font-weight: 400;
+    font-size: 1em;
+    color: $black2;
+}
+
+.shedulesBox .shedules .customerName{
+    color: $black1;
+    font-size: 1.3em;
+    margin-top: 5px;
+}
+
+.shedulesBox .shedules .tagBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 20px;
+    border-end-end-radius: 5px;
+    padding: 5px;
+    font-size: 1em;
+    background: $blue;
+    color: $white;
+}
+
+
+.shedulesBox .shedules:hover{
+    background: $blue;
+}
+
+.shedulesBox .shedules:hover .customerName{
+    color: $white;
+}
+
+
+.shedulesBox .shedules:hover .phone,
+.shedulesBox .shedules:hover .test{
+    color: $grey;
+}
