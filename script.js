@@ -26,8 +26,8 @@ let userInfo = document.querySelector('.userConfig');
 
 function userDropdown(){
     userInfo.classList.toggle('active');
-    console.log('teste');
 }
-
-
 userSetting.addEventListener('click', userDropdown);
+
+
+

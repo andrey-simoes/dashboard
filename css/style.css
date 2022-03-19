@@ -205,13 +205,20 @@ body {
 }
 
 .userConfig li {
+  position: relative;
+  width: 100%;
+  padding: 7px;
   list-style: none;
-  padding: 5px;
 }
 
 .userConfig li a {
   text-decoration: none;
   color: #222;
+}
+
+.userConfig li:hover a {
+  text-decoration: none;
+  color: #287bff;
 }
 
 .userConfig.active {
@@ -288,6 +295,25 @@ body {
 .cardBox .card:hover .cardName,
 .cardBox .card:hover .iconBx {
   color: #fff;
+}
+
+.graphBox {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  min-height: 200px;
+}
+
+.graphBox .box {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
 }
 
 .details {
@@ -460,6 +486,10 @@ body {
 
 /* Responsive Design */
 @media (max-width: 991px) {
+  .graphBox {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .navigation {
     left: -300px;
   }
