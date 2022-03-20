@@ -221,6 +221,10 @@ body {
   color: #287bff;
 }
 
+.userNotification.active {
+  display: block;
+}
+
 .userConfig.active {
   display: block;
 }
@@ -247,6 +251,35 @@ body {
   position: absolute;
   top: 10px;
   left: 40px;
+}
+
+.userNotification {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  cursor: pointer;
+}
+
+.notification {
+  position: absolute;
+  top: 50px;
+  right: 90px;
+  display: none;
+  z-index: 9999;
+  background-color: #287bff;
+  color: #fff;
+  padding: 4em;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.notificationIcon {
+  font-size: 20px;
+}
+
+.notification.active {
+  display: block;
 }
 
 .cardBox {

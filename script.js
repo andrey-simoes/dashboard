@@ -29,5 +29,13 @@ function userDropdown(){
 }
 userSetting.addEventListener('click', userDropdown);
 
+// Notification
 
 
+
+const userNotification = document.querySelector('.userNotification');
+const notification = document.querySelector('.notification');
+
+userNotification.addEventListener('click', () =>{
+    notification.classList.toggle('active');
+})
