@@ -262,7 +262,7 @@ body {
 
 .notification {
   position: absolute;
-  top: 50px;
+  top: 60px;
   right: 90px;
   display: none;
   z-index: 9999;
@@ -272,6 +272,20 @@ body {
   text-align: center;
   font-size: 20px;
   border-radius: 10px;
+}
+
+.notification::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: 5px;
+  transform: translateX(-50%);
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0px 7.5px 8px;
+  border-color: transparent transparent #287bff;
+  z-index: 2;
 }
 
 .notificationIcon {
@@ -668,6 +682,64 @@ body {
 .shedulesBox .shedules:hover .phone,
 .shedulesBox .shedules:hover .test {
   color: #e6e6e6ce;
+}
+
+.formExame {
+  width: 400px;
+  height: 600px;
+  background-color: #287bff;
+  margin: 50px auto;
+  padding: 30px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.headerExame {
+  text-align: center;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.form-control {
+  padding: 10px 0px;
+}
+
+.form-control .amostra {
+  font-weight: 600;
+  font-size: 1.17rem;
+  padding-bottom: 10px;
+}
+
+.form-control label {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.form-control input {
+  display: block;
+  padding: 10px;
+  border: none;
+  margin-top: 5px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.btn-form {
+  border: none;
+  background-color: #fff;
+  color: #222;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btn-form:hover {
+  background-color: #222;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

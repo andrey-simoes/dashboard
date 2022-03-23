@@ -1,0 +1,58 @@
+
+.formExame{
+    width: 400px;
+    height: 600px;
+    background-color: $blue;
+    margin: 50px auto;
+    padding: 30px;
+    color: $white;
+    border-radius: 5px;
+}
+
+.headerExame{
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.form-control{
+    padding: 10px 0px;
+}
+
+.form-control .amostra{
+    font-weight: 600;
+    font-size: 1.17rem;
+    padding-bottom: 10px;
+}
+
+.form-control label{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1rem;
+}
+ 
+.form-control input{
+    display: block;
+    padding: 10px;
+    border: none;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn-form{
+    border: none;
+    background-color: $white;
+    color: $black1;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn-form:hover{
+    background-color: $black1;
+    color: $white;
+}
